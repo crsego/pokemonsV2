@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+
+.head {
+  display: grid;
+  grid-template-columns:repeat(3, 33.3%) ;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+.logo{grid-column: 2/2;}
+
+.head-logo {
+  filter: brightness(150%);
+  width: 269px;
+  height: 99px;
+  overflow: hidden;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png);
+}
+
+.logout{
+  grid-column: 3 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bttn-logout{
+  height: 30px;
+}
+
+#bttnUp {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+h1 {
+  font-family: "Bungee Inline", cursive;
+}
+
+h2 {
+  font-family: "Bungee Inline", cursive;
+}
+
+h3 {
+  font-family: "Bungee Inline", cursive;
+} 
+
+.profile{
+  font-family: "Bungee Inline", cursive;
+  font-size: 20px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search{
+  margin-bottom: 50px;
+}
+
+.searchInput{
+  border: solid black;
+  border-radius: 5px;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  background: #faeff0;
+  box-shadow: 0px 0px 12px rgb(19, 18, 18), -0px -0px 12px rgb(20, 20, 20);
+  width: 250px;
+  border-radius: 10px;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.pokemon:hover{
+background-color: rgb(226, 222, 222);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background: #faeff0;
+  box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
+}
+
+body {
+  background-color: #b7bbba;
+}
+
+.info-list {
+  margin: 0 auto;
+  padding: 30px 30px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background: #faeff0;
+  box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
+}
+
+.name {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.poke-img {
+  max-width: 250px;
+  align-self: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: solid black;
+  background-image: url(http://pa1.narvii.com/5740/78bb4bae24938468a6a0b6cbdb7224beae3b7b95_00.gif);
+  box-shadow: 0px 0px 12px rgb(14, 13, 13), -0px -0px 12px #fff;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+option {
+  font-size: 18px;
+}
+
+select {
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.poke-img-home {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: solid black;
+  box-shadow: 0px 0px 12px rgb(14, 13, 13), 5px 5px 12px rgb(33, 31, 139);
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+
+.type-name {
+  font-size: 15px;
+  margin: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: solid black;
+  background-color: rgb(124, 118, 108);
+  color: black;
+}
+
+.type-name:hover {
+  background-color: rgb(196, 193, 188);
+}
+
+.title {
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+}
+
+.types {
+  display: flex;
+}
+
+.relation-list {
+  display: grid;
+  grid-template-columns: 42.5% 42.5%;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  row-gap: 2%;
+  justify-content: center;
+}
+
+.damage-type {
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+}
+
+.damages {
+  display: grid;
+  grid-template-columns: 31.3% 31.3% 31.3%;
+  grid-template-areas: "header header header";
+  padding: 10px;
+  border: solid black;
+  justify-items: center;
+  box-shadow: 0px 0px 12px rgb(59, 58, 58), -0px -0px 12px #fff;
+}
+
+.a-damage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.a-damage:hover {
+  color: blue;
+}
+
+.type-moves {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: solid black;
+  box-shadow: 0px 0px 12px rgb(59, 58, 58), -0px -0px 12px #fff;
+}
+
+.move-name {
+  margin: 10px;
+}
+
+.pokes {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+  border: solid black;
+  padding: 20px;
+}
+
+.bttnMore {
+  width: 120px;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.bttnMore:active {
+  background-color: white;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 500px) {
+  .pokemon-list {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .pokemon {
+    margin: 10px;
+  }
+
+  .relation-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .damages {
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .pokes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and (min-device-width: 500px) and (max-device-width: 1284px) {
+  .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+
+  .pokemon {
+    margin: 10px;
+    width: 250px;
+  }
+
+  .footer {
+    height: 100px;
+  }
+}
